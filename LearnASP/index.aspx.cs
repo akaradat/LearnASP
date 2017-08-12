@@ -13,5 +13,12 @@ namespace LearnASP
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Customer cus = new Customer(txt_name.Text, int.Parse(txt_age.Text));
+            Response.Write("Hello " + cus.Name + ",you're " + cus.Age + "years");
+
+        }
     }
 }
