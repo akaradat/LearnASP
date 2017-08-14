@@ -16,9 +16,17 @@ namespace PassGenWithCS
         {
             for (int i = 0; i < code.Length; i++)
             {
-
-                pass += (char)(((code[i] - 32) * 5) % 96 + 32);
-                pass += (char)((code[i] - 32 + 10) % 96 + 32);
+                if (code[i] >= 32 && code[i] <= 126)
+                {
+                    pass += (char)(((code[i] - 32) * 5) % 95 + 32);
+                    pass += (char)((code[i] - 32 + 10) % 95 + 32);
+                }
+                else
+                {
+                    pass += code[i];
+                    pass += code[i];
+                }
+                
 
 
             }   
@@ -29,8 +37,15 @@ namespace PassGenWithCS
         {
             for (int i = 1; i < code.Length; i += 2)
             {
-
-                pass += (char)((code[i] - 126 - 10) % 96 + 126);
+                if (code[i] >= 32 && code[i] <= 126)
+                {
+                    pass += (char)((code[i] - 126 - 10) % 95 + 126);
+                }
+                else
+                {
+                    pass += code[i];
+                }
+                
 
             }
             return pass;
