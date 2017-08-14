@@ -39,12 +39,12 @@ namespace PassGenWithCS
             {
                 switch (order[i])
                 {
-                    case '0':
-                        {
-                            encrypt = new En0(code);
-                            code = encrypt.EnPass();
-                            break;
-                        }
+                    //case '0':
+                    //    {
+                    //        encrypt = new En0(code);
+                    //        code = encrypt.EnPass();
+                    //        break;
+                    //    }
 
                     case '1':
                         {
@@ -67,12 +67,12 @@ namespace PassGenWithCS
                             break;
                         }
 
-                    case '4':
-                        {
-                            encrypt = new En4(code);
-                            code = encrypt.EnPass();
-                            break;
-                        }
+                    //case '4':
+                    //    {
+                    //        encrypt = new En4(code);
+                    //        code = encrypt.EnPass();
+                    //        break;
+                    //    }
 
                     case '5':
                         {
@@ -88,12 +88,12 @@ namespace PassGenWithCS
                             break;
                         }
 
-                    case '7':
-                        {
-                            encrypt = new En7(code);
-                            code = encrypt.EnPass();
-                            break;
-                        }
+                    //case '7':
+                    //    {
+                    //        encrypt = new En7(code);
+                    //        code = encrypt.EnPass();
+                    //        break;
+                    //    }
 
                     case '8':
                         {
@@ -120,12 +120,12 @@ namespace PassGenWithCS
             {
                 switch (order[i])
                 {
-                    case '0':
-                        {
-                            encrypt = new En0(code);
-                            code = encrypt.DePass();
-                            break;
-                        }
+                    //case '0':
+                    //    {
+                    //        encrypt = new En0(code);
+                    //        code = encrypt.DePass();
+                    //        break;
+                    //    }
 
                     case '1':
                         {
@@ -148,12 +148,12 @@ namespace PassGenWithCS
                             break;
                         }
 
-                    case '4':
-                        {
-                            encrypt = new En4(code);
-                            code = encrypt.DePass();
-                            break;
-                        }
+                    //case '4':
+                    //    {
+                    //        encrypt = new En4(code);
+                    //        code = encrypt.DePass();
+                    //        break;
+                    //    }
 
                     case '5':
                         {
@@ -169,12 +169,12 @@ namespace PassGenWithCS
                             break;
                         }
 
-                    case '7':
-                        {
-                            encrypt = new En7(code);
-                            code = encrypt.DePass();
-                            break;
-                        }
+                    //case '7':
+                    //    {
+                    //        encrypt = new En7(code);
+                    //        code = encrypt.DePass();
+                    //        break;
+                    //    }
 
                     case '8':
                         {
